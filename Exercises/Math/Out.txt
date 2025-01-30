@@ -1,0 +1,32 @@
+sqrt(2) evaluated to: 1.4142135623731
+sqrt(2)^2 evaluated to: 2
+------------------------
+2^(1/5) evaluated to: 1.14869835499704
+2^(1/5)^5 evaluated to: 2
+------------------------
+e^pi evaluated to: 23.1406926327793
+ln(e^pi) evaluated to: 3.14159265358979
+------------------------
+pi^e evaluated to: 22.459157718361
+log_pi(pi^e) evaluated to: 2.71828182845905
+------------------------
+Gamma function evaluated to: 0.999999989064903
+Expected to be 1
+Gamma function evaluated to: 0.999999989064903
+Expected to be 1
+Gamma function evaluated to: 1.99999997812981
+Expected to be 2
+Gamma function evaluated to: 5.99999993438942
+Expected to be 6
+Gamma function evaluated to: 23.9999997375577
+Expected to be 24
+Gamma function evaluated to: 119.999998687788
+Expected to be 120
+Gamma function evaluated to: 719.99999212673
+Expected to be 720
+Gamma function evaluated to: 5039.99994488711
+Expected to be 5040
+Gamma function evaluated to: 40319.9995590969
+Expected to be 40320
+Gamma function evaluated to: 362879.997652016
+Expected to be 362880
