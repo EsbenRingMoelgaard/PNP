@@ -30,3 +30,24 @@ Gamma function evaluated to: 40319.9995590969
 Expected to be 40320
 Gamma function evaluated to: 362879.997652016
 Expected to be 362880
+------------------------
+LnGamma function evaluated to: -1.09350976051914E-08
+Expected to be 0
+LnGamma function evaluated to: -1.09350976051914E-08
+Expected to be 0
+LnGamma function evaluated to: 0.693147169624848
+Expected to be 0.693147180559945
+LnGamma function evaluated to: 1.79175945829296
+Expected to be 1.79175946922805
+LnGamma function evaluated to: 3.17805381941285
+Expected to be 3.17805383034795
+LnGamma function evaluated to: 4.78749173184695
+Expected to be 4.78749174278205
+LnGamma function evaluated to: 6.579251201075
+Expected to be 6.5792512120101
+LnGamma function evaluated to: 8.52516135013032
+Expected to be 8.52516136106541
+LnGamma function evaluated to: 10.6046028918102
+Expected to be 10.6046029027453
+LnGamma function evaluated to: 12.8018274736111
+Expected to be 12.8018274800815

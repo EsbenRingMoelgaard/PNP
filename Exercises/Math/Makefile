@@ -1,11 +1,14 @@
-Out.txt : Main.exe
-	mono Main.exe > Out.txt
+CODE = $(filter %.cs,$^)
+DLLS = $(addprefix -reference:,$(filter %.dll,$^))
+MKLIB = mcs -out:$@ -target:library $(DLLS) $(CODE)
+MKEXE = mcs -out:$@ -target:exe $(DLLS) $(CODE)
 
-Main.exe : MainClass.cs SFuns.dll
-	mcs -target:exe -reference:SFuns -out:Main.exe MainClass.cs
+Out.txt: Main.exe
+	mono Main.exe > $@
 
-SFuns.dll : SFuns.cs
-	mcs -target:library -out:SFuns.dll SFuns.cs
+Main.exe: MainClass.cs SFuns.dll; $(MKEXE)
+
+SFuns.dll: SFuns.cs; $(MKLIB)
 
 clean : 
 	rm Out.txt Main.exe SFuns.dll

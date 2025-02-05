@@ -15,6 +15,11 @@ public static class MainClass {
             System.Console.Write($"Gamma function evaluated to: {SFuns.FGamma(i)}\n");
             System.Console.Write($"Expected to be {SFuns.IntFactorial(i-1)}\n");
         }
+        separate();
+        for(int i=1; i<=10; i++) {
+            System.Console.Write($"LnGamma function evaluated to: {SFuns.LnFGamma(i)}\n");
+            System.Console.Write($"Expected to be {Log(SFuns.IntFactorial(i-1))}\n");
+        }
     }
 
     static void separate() {
