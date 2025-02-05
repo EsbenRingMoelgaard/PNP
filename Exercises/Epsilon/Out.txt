@@ -1,0 +1,25 @@
+My max int: 2147483647. The built-in max int: 2147483647
+My min int: -2147483648. The built-in min int: -2147483648
+The double epsilon is: 2.22044604925031E-16
+For comparison, 2^-52: 2.22044604925031E-16
+The float epsilon is: 1.192093E-07
+For comparison, 2^-23: 1.192093E-07
+
+Tiny: 2.22044604925031E-16 is the smallest possible unit by which a double may be incremented. Hence
+a = 1 + tiny/2 + tiny/2 evaluates as follows:
+a = (1 + tiny/2) + tiny/2
+a = (1) + tiny/2
+a = 1
+whereas
+b = tiny/2 + tiny/2 + 1 evaluates as follows:
+b = (tiny/2 + tiny/2) + 1
+b = (tiny) + 1
+
+a==b? False
+a==c? True
+c==b? False
+
+d1==d2 ? => False
+d1 approx d2 ? => True
+d1 approx (1e-20 precision) d2 ? => False
+So Approx function works as intended :)
