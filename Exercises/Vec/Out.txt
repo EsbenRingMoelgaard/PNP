@@ -1,5 +1,7 @@
 A: (2, 3, 4)
 B: (-5, 6, 18)
+C: (0.2, 0, -13.555)
+Default vector: (0, 0, 0)
 
 A + B: (-3, 9, 22)
 A - B: (7, -3, -14)
@@ -11,6 +13,7 @@ A / 10: (0.2, 0.3, 0.4)
 A dot B via static method: 80
 A dot B via instance method: 80
 B dot A: 80
+A dot A: 29
 
 A cross B via static method: (30, -56, 27)
 A cross B via instance method: (30, -56, 27)
@@ -19,3 +22,14 @@ B cross A: (-30, 56, -27)
 A dot (A cross B): 0
 A cross (A cross B): (305, 66, -202)
 A cross (5 * B): (150, -280, 135)
+
+A == A: True
+A == B: False
+A != A: False
+A != B: True
+
+A approx A: True
+A approx B: False
+A !approx A: False
+A !approx B: True
+
