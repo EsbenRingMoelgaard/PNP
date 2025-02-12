@@ -7,7 +7,7 @@
 | Math | Done|
 | Epsilon | Verify done |
 | Vec | Verify done |
-| C# input/output | Next up |
+| C# input/output | Verify done |
 | Generic list in C# | Not started |
 | Complex | Not started |
 | Plots | Not started |

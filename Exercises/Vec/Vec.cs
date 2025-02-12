@@ -53,7 +53,7 @@ public class Vec {
 
     public double dot(Vec other) => dot(this, other);
 
-    // Cross product
+    // Cross product    
     public static Vec cross(Vec vec1, Vec vec2) {
         double crossX = (vec1.y * vec2.z) - (vec1.z * vec2.y);
         double crossY = (vec1.z * vec2.x) - (vec1.x * vec2.z);
