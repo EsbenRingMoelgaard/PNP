@@ -1,0 +1,10 @@
+set term pngcairo
+set output "Gamma/Gamma_plot.png"
+
+set arrow from -4, graph 0 to -4, graph 1 nohead dt "-"
+set arrow from -3, graph 0 to -3, graph 1 nohead dt "-"
+set arrow from -2, graph 0 to -2, graph 1 nohead dt "-"
+set arrow from -1, graph 0 to -1, graph 1 nohead dt "-"
+set arrow from 0, graph 0 to 0, graph 1 nohead dt "-"
+
+plot [-5.1:5.1] [-5:30] "Out.txt" index 1 with lines title "Gamma(x)", "Gamma/Gamma_table.txt" title "x!"

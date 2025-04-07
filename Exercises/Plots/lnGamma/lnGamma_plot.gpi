@@ -1,0 +1,4 @@
+set term pngcairo
+set output "lnGamma/lnGamma_plot.png"
+
+plot [0:5.1] "Out.txt" index 2 with lines title "lnGamma(x)", "lnGamma/lnGamma_table.txt" title "ln(x!)"
