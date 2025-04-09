@@ -1,6 +1,7 @@
 public class MainClass {
     public static void Main() {
         Matrix ident = new Matrix(new double[,] {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}});
+        Matrix matrix = new Matrix(new double[,] {{1, 2, 3}, {4, 4, 4}, {7, 6, 5}});
         Vector ones = new Vector(new double[] {1, 1, 1});
 
         Vector vector = new Vector(new double[] {1, 4.5, -2});
@@ -13,5 +14,8 @@ public class MainClass {
         System.Console.WriteLine(vector * ones);
         System.Console.WriteLine(ones + vector);
         System.Console.WriteLine(7.5 * ones);
+
+        System.Console.WriteLine(matrix);
+        System.Console.WriteLine(ident * matrix);
     }
 }

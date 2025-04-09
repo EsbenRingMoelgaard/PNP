@@ -12,6 +12,10 @@ public class Vector {
         this.data = values;
     }
 
+    public Vector(int size) {
+        this.data = new double[size];
+    }
+
     public static Vector operator *(double a, Vector b) {
         double[] result = new double[b.Size];
         for(int i=0; i<b.Size; i++) {

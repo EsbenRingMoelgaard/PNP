@@ -78,13 +78,29 @@ public class Matrix {
     public static Matrix operator *(Matrix a, Matrix b) {
         if(a.Columns != b.Rows) { throw new InvalidOperationException($"Operation on matrices of mismatched dimensions"); }
         double[,] result = new double[a.Rows, b.Columns];
-        for(int i=0; i<a.Rows; i++) {
-            Vector row = 0;
-            for(int j=0; j<b.Columns; j++) {
-                value += a[i, j] * b[j];
+        
+        for(int i=0; i<b.Columns; i++) // Loop over each column in b
+        {
+            for(int j=0; j<a.Rows; j++) // Loop over each row in a
+            {
+                double value = 0;
+                for(int k=0; k<a.Columns; k++) // Loop over each column in a
+                {
+                    value += b[j, i] * a[j, k];
+                }
+                result[j, i] = value;
             }
-            result[i] = value;
         }
-        return new Vector(result);
+
+        return new Matrix(result);
+    }
+
+    public override string ToString() {
+        string result = "";
+        
+        for(int i=0; i<this.Rows; i++) {
+            result += GetRow(i).ToString() + "\n";
+        }
+        return result;
     }
 }
